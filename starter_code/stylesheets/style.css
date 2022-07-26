@@ -1,7 +1,260 @@
-/*
-background-grey: #F4F3F4;
-button-purple: #192592
-main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
-*/
+:root {
+  --background-grey: #f4f3f4;
+  --button-purple: #192592;
+  --main-titles-dark-grey: #2c303f;
+  --paragraph-grey: #5b5e6d;
+  --nav-grey: #5b5e6d;
+}
+
+body {
+  font-family: Helvetica, sans-serif, sans-serif;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  color: var(--paragraph-grey);
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 1rem;
+  position: fixed;
+  background-color: white;
+  width: 100vw;
+  height: 40px;
+  top: 0;
+  border-bottom: 1px solid var(--background-grey);
+}
+
+#hamburger {
+  display: none;
+}
+
+nav ul {
+  display: none;
+}
+
+header img {
+  width: 20%;
+}
+
+nav label {
+  color: rgb(25, 25, 25);
+  font-style: normal;
+  font-size: 2em;
+  z-index: 2;
+  /* display: inline-block;
+  position: absolute;
+    top: 15px;
+    right: 20px; */
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+#hero h1 {
+  color: var(--main-titles-dark-grey);
+  font-family: "Circular", serif;
+  font-size: 3rem;
+  font-weight: bold;
+  width: 60%;
+  margin: 1rem 0;
+}
+
+.input-email {
+  border: 1.5px solid var(--background-grey);
+  padding: 2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+#hero img {
+  margin-top: 2rem;
+}
+
+.get-started-btn {
+  padding: 2rem;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--button-purple);
+  color: white;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+.sign-in-link {
+  text-align: center;
+}
+
+main {
+  background-color: var(--background-grey);
+  padding: 2rem;
+}
+
+.description-companies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main h2 {
+  font-family: "Circular", serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--main-titles-dark-grey);
+}
+
+main p {
+  color: var(--paragraph-grey);
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  line-height: 1.5;
+  text-align: center;
+}
+
+main img {
+  width: 40%;
+  padding: 2rem;
+}
+
+.discover-why {
+  padding: 2rem;
+  border-radius: 5px;
+  border: 1px solid var(--button-purple);
+  background-color: white;
+  color: var(--button-purple);
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 100%;
+}
+
+.logos {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.logo {
+  /* display: flex;
+  justify-content: center; */
+  text-align: center;
+  border-bottom: 0.5px solid #ebebeb;
+}
+
+.logo-without-border {
+  display: flex;
+  justify-content: center;
+}
+
+#free-trial {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+#free-trial h3 {
+  font-family: "Circular", serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--main-titles-dark-grey);
+}
+
+footer {
+  font-size: 1.2rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.iso-slack {
+  width: 20%;
+}
+
+.footer-content ul {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+  color: var(--paragraph-grey);
+}
+
+.ul-heading {
+  color: var(--paragraph-grey);
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.footer-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-grey);
+  color: var(--paragraph-grey);
+}
+
+.footer-footer ul {
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.language,
+.social-networks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.language img {
+  width: 10%;
+}
+
+.social-networks .fab {
+  font-size: 1.5rem;
+}
+
+/* @media only screen and (max-width: 768px) {
+} */
+
+@media only screen and (min-width: 767px) and (max-width: 961px) {
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1024px) {
+}
+
+@media only screen and (min-width: 1200px) {
+  nav label {
+    display: none;
+  }
+}
