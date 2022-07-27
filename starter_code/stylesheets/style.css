@@ -27,12 +27,12 @@ ul {
 
 header {
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   align-items: center;
   padding: 1rem;
   position: fixed;
   background-color: white;
-  width: 100vw;
+  /* width: 100vw; */
   height: 40px;
   top: 0;
   border-bottom: 1px solid var(--background-grey);
@@ -55,10 +55,6 @@ nav label {
   font-style: normal;
   font-size: 2em;
   z-index: 2;
-  /* display: inline-block;
-  position: absolute;
-    top: 15px;
-    right: 20px; */
 }
 
 #hero {
@@ -76,6 +72,12 @@ nav label {
   font-weight: bold;
   width: 60%;
   margin: 1rem 0;
+}
+
+.get-started {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 .input-email {
@@ -149,6 +151,8 @@ main img {
 .logos {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 1rem;
 }
 
@@ -248,9 +252,100 @@ footer {
 } */
 
 @media only screen and (min-width: 767px) and (max-width: 961px) {
+  .logos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .logo {
+    width: 50%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo-without-border {
+    width: 45%;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  img {
+    object-fit: contain;
+  }
+
+  .get-started {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .input-email {
+    /* margin: 2rem 0; */
+    width: 50%;
+    margin: 0;
+    margin-right: 1rem;
+  }
+
+  .get-started-btn {
+    width: 30%;
+  }
+
+  .discover-why {
+    width: 40%;
+  }
+
+  .footer-top-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .iso {
+    width: 10%;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    flex-wrap: nowrap;
+  }
+
+  .footer-content ul {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media only screen and (min-width: 960px) and (max-width: 1024px) {
+  .get-started {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .input-email {
+    width: 50%;
+    margin: 0;
+    margin-right: 1rem;
+  }
+
+  .get-started-btn {
+    width: 30%;
+  }
+
+  .discover-why {
+    width: 40%;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  .logo-without-border {
+    width: 30%;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
